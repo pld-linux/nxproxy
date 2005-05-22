@@ -5,6 +5,7 @@ Version:	1.3.2
 Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
+#Source0Download: http://www.nomachine.com/sources.php
 Source0:	http://www.nomachine.com/download/nxsources/nxproxy/%{name}-%{version}-1.tar.gz
 # Source0-md5:	5efdfe1a54b45e6ebce08f711d565100
 URL:		http://www.nomachine.com/
