@@ -1,12 +1,16 @@
+%define		_version_major	1.4.0
+%define		_version_minor	2
+%define		_release	1
+
 Summary:	wrapper for the functionalities built into the nxcomp library
 Summary(pl):	wrapper dla funkcjonalno¶ci wbudowanych w biblioekê nxcomp
 Name:		nxproxy
-Version:	1.4.0_2
-Release:	1
+Version:	%{_version_major}
+Release:	%{_version_minor}.%{_release}
 License:	GPL
 Group:		X11/Applications/Networking
 #Source0Download: http://www.nomachine.com/sources.php
-Source0:	http://www.nomachine.com/download/nxsources/%(echo %{version} | cut -f1 -d_)/%{name}-%(echo %{version} | tr _ -).tar.gz
+Source0:	http://www.nomachine.com/download/nxsources/%{_version_major}/%{name}-%{_version_major}-%{_version_minor}.tar.gz
 # Source0-md5:	15d89810730c7ed0e669b5525e5f3620
 URL:		http://www.nomachine.com/
 BuildRequires:	XFree86-devel
