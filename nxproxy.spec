@@ -1,13 +1,13 @@
 Summary:	wrapper for the functionalities built into the nxcomp library
 Summary(pl):	wrapper dla funkcjonalno¶ci wbudowanych w biblioekê nxcomp
 Name:		nxproxy
-Version:	1.3.2
+Version:	1.4.0_2
 Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
 #Source0Download: http://www.nomachine.com/sources.php
-Source0:	http://www.nomachine.com/download/nxsources/nxproxy/%{name}-%{version}-1.tar.gz
-# Source0-md5:	5efdfe1a54b45e6ebce08f711d565100
+Source0:	http://www.nomachine.com/download/nxsources/%(echo %{version} | cut -f1 -d_)/%{name}-%(echo %{version} | tr _ -).tar.gz
+# Source0-md5:	15d89810730c7ed0e669b5525e5f3620
 URL:		http://www.nomachine.com/
 BuildRequires:	XFree86-devel
 BuildRequires:	nxcomp-devel
@@ -25,8 +25,11 @@ przez dowolnego standardowego klienta X.
 
 %prep
 %setup -q -n %{name}
+sed -i 's/CXXFLAGS="-O3"/CXXFLAGS="%{rpmcflags}"/' configure.in
+sed -i 's/CPPFLAGS="-O3"/CPPFLAGS="%{rpmcflags}"/' configure.in
 
 %build
+%{__autoconf}
 %configure
 %{__make}
 
