@@ -13,7 +13,9 @@ Source0:	http://www.nomachine.com/download/nxsources/%{_version_major}/%{name}-%
 # Source0-md5:	15d89810730c7ed0e669b5525e5f3620
 URL:		http://www.nomachine.com/
 BuildRequires:	XFree86-devel
+BuildRequires:	autoconf
 BuildRequires:	nxcomp-devel
+BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
