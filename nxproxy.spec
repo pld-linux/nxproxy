@@ -1,8 +1,8 @@
 %define		_version_major	1.5.0
 %define		_version_minor	9
 
-Summary:	wrapper for the functionalities built into the nxcomp library
-Summary(pl):	wrapper dla funkcjonalno¶ci wbudowanych w biblioekê nxcomp
+Summary:	Wrapper for the functionalities built into the nxcomp library
+Summary(pl):	Wrapper dla funkcjonalno¶ci wbudowanych w biblioekê nxcomp
 Name:		nxproxy
 Version:	%{_version_major}.%{_version_minor}
 Release:	1
@@ -12,10 +12,10 @@ Group:		X11/Applications/Networking
 Source0:	http://64.34.161.181/download/%{_version_major}/sources/%{name}-%{_version_major}-%{_version_minor}.tar.gz
 # Source0-md5:	d2e3c1a109db336dfa497f4c2004f2d5
 URL:		http://www.nomachine.com/
-BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	autoconf
 BuildRequires:	nxcomp-devel
 BuildRequires:	sed >= 4.0
+BuildRequires:	xorg-lib-libX11-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
