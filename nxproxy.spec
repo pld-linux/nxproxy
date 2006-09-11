@@ -12,10 +12,10 @@ Group:		X11/Applications/Networking
 Source0:	http://64.34.161.181/download/%{_version_major}/sources/%{name}-%{_version_major}-%{_version_minor}.tar.gz
 # Source0-md5:	b078c19372c82e85667cbbac880fa688
 URL:		http://www.nomachine.com/
+BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
 BuildRequires:	nxcomp-devel
 BuildRequires:	sed >= 4.0
-BuildRequires:	X11-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
