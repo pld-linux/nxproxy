@@ -2,7 +2,7 @@
 %define		_version_minor	2
 
 Summary:	Wrapper for the functionalities built into the nxcomp library
-Summary(pl):	Wrapper dla funkcjonalno¶ci wbudowanych w biblioekê nxcomp
+Summary(pl.UTF-8):   Wrapper dla funkcjonalnoÅ›ci wbudowanych w biblioekÄ™ nxcomp
 Name:		nxproxy
 Version:	%{_version_major}.%{_version_minor}
 Release:	1
@@ -23,9 +23,9 @@ nxproxy, a stand alone program wrapping the functionalities built into
 Xcomp library, needed to compress the X protocol produced by any
 standard X client.
 
-%description -l pl
-nxproxy to samodzielny program obudowuj±cy funkcjonalno¶ci wbudowane w
-bibliotekê Xcomp, potrzebne do kompresji protoko³u X wytwarzanego
+%description -l pl.UTF-8
+nxproxy to samodzielny program obudowujÄ…cy funkcjonalnoÅ›ci wbudowane w
+bibliotekÄ™ Xcomp, potrzebne do kompresji protokoÅ‚u X wytwarzanego
 przez dowolnego standardowego klienta X.
 
 %prep
