@@ -2,7 +2,7 @@
 %define		_version_minor	2
 
 Summary:	Wrapper for the functionalities built into the nxcomp library
-Summary(pl.UTF-8):   Wrapper dla funkcjonalności wbudowanych w biblioekę nxcomp
+Summary(pl.UTF-8):	Wrapper dla funkcjonalności wbudowanych w biblioekę nxcomp
 Name:		nxproxy
 Version:	%{_version_major}.%{_version_minor}
 Release:	1
