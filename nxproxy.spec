@@ -1,5 +1,5 @@
-%define		_version_major	3.2.0
-%define		_version_minor	1
+%define		_version_major	3.3.0
+%define		_version_minor	2
 
 Summary:	Wrapper for the functionalities built into the nxcomp library
 Summary(pl.UTF-8):	Wrapper dla funkcjonalności wbudowanych w biblioekę nxcomp
@@ -10,7 +10,7 @@ License:	GPL
 Group:		X11/Applications/Networking
 #Source0Download: http://www.nomachine.com/sources.php
 Source0:	http://64.34.161.181/download/%{_version_major}/sources/%{name}-%{_version_major}-%{_version_minor}.tar.gz
-# Source0-md5:	ac31e8f2f112e3720f3c00cec67c0734
+# Source0-md5:	047206e5a811b915aac4ae09bddef207
 URL:		http://www.nomachine.com/
 BuildRequires:	autoconf >= 2.59-9
 BuildRequires:	nxcomp-devel
